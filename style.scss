@@ -1,0 +1,274 @@
+// Primary Colors
+$color-strongCyan: hsl(172, 67%, 45%);
+
+// Neutral Colors
+$color-veryDarkCyanVery: hsl(183, 100%, 15%);
+$color-darkGrayishCyan: hsl(186, 14%, 43%);
+$color-grayishCyan: hsl(184, 14%, 56%);
+$color-lightGrayishCyan: hsl(185, 41%, 84%);
+$color-veryLightGrayishcyan: hsl(189, 41%, 97%);
+$color-white: hsl(0, 0%, 100%);
+$color-red: #ff3333;
+
+* {
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 0.9375rem;
+    background-color: $color-lightGrayishCyan;
+}
+
+body {
+    font-family: "Space Mono", sans-serif;
+}
+
+button {
+    background-color: $color-veryDarkCyanVery;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-strongCyan;
+    }
+}
+
+h1 {
+    font-family: "Fraunces", sans-serif;
+    color: $color-veryDarkCyanVery;
+    margin-top: 10%;
+    margin-bottom: 8%;
+    @media only screen and (min-width: 415px) {
+        margin-top: 8%;
+        max-width: 200px;
+    }
+}
+
+main {
+    background-color: $color-white;
+    border-radius: 30px 30px 0 0;
+    max-height: 795px;
+
+    @media only screen and (min-width: 415px) {
+        background-color: $color-white;
+        border-radius: 30px;
+        max-height: 795px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        max-width: 760px;
+    }
+}
+
+.tip--cta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+
+    @media only screen and (min-width: 415px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.c-result-splitter {
+    background-color: $color-veryDarkCyanVery;
+    margin-left: 5%;
+    margin-right: 5%;
+    min-height: 300px;
+    border-radius: 15px;
+    margin-top: 5%;
+
+    @media only screen and (min-width: 415px) {
+        margin-top: 10%;
+        height: 360px;
+    }
+}
+
+.btn-reset {
+    background-color: $color-strongCyan;
+    color: $color-veryDarkCyanVery;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+
+    @media only screen and (min-width: 415px) {
+        margin-top: 30%;
+
+        &:hover {
+            background-color: $color-lightGrayishCyan;
+        }
+    }
+}
+
+h1 {
+    font-family: "Space mono", sans-serif;
+    margin-top: 8%;
+
+    max-width: 200px;
+
+    @media only screen and (min-width: 415px) {
+        margin-bottom: 3%;
+    }
+}
+
+.flex-container {
+    @media only screen and (min-width: 415px) {
+        width: 600px;
+        height: 415px;
+    }
+}
+
+span {
+    color: $color-white;
+}
+
+li {
+    color: $color-white;
+}
+.c-input,
+.c-tip {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+legend {
+    color: $color-veryDarkCyanVery;
+    padding-top: 8%;
+    padding-bottom: 2%;
+}
+
+input {
+    font-size: 24px;
+    width: 100%;
+}
+
+.input--bill,
+.c-person {
+    background-color: $color-veryLightGrayishcyan;
+    border-radius: 5px;
+}
+
+.error-message,
+.error-message2 {
+    color: $color-red;
+    align-items: flex-end;
+    padding-bottom: 2%;
+}
+
+.error-container {
+    border: 2px solid $color-red;
+}
+.icon--dollar {
+    max-width: 100%;
+    padding: 15px;
+}
+
+.tip-custom {
+    background-color: $color-veryLightGrayishcyan;
+    color: $color-veryDarkCyanVery;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-strongCyan;
+    }
+}
+
+#bill,
+#persons {
+    background-color: $color-veryLightGrayishcyan;
+    text-align: right;
+    font-size: 2rem;
+    color: $color-veryDarkCyanVery;
+    border-radius: 5px;
+    padding-right: 10px;
+}
+
+.active {
+    background-color: $color-strongCyan;
+    color: $color-white;
+}
+
+.btn-reset {
+    background-color: $color-strongCyan;
+    color: $color-veryDarkCyanVery;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.tip-result-line1 {
+    padding: 15% 5% 2% 5%;
+}
+.tip-result-line2 {
+    padding: 2% 5% 2% 5%;
+}
+
+.result-line-1,
+.result-line-2 {
+    font-size: 2.4rem;
+    color: $color-strongCyan;
+}
+
+// Utilities
+
+.u-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.u-flex-column {
+    flex-direction: column;
+}
+
+.u-flex-jc-center {
+    justify-content: center;
+}
+
+.u-flex-jc-end {
+    justify-content: end;
+}
+
+.u-flex-jc-between {
+    justify-content: space-between;
+}
+
+.u-padding-top {
+    padding-top: 10%;
+}
+
+.u-padding {
+    padding: 5%;
+}
+
+.u-margin-top {
+    margin-top: 5%;
+}
+
+.u-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+}
+
+.u-hidden {
+    display: none;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="u-flex u-flex-jc-center">
+    <h1>SPLITTER</h1>
+  </header>
+  <main>
+    <div class="flex-container">
+      <fieldset class="c-input">
+        <legend class="u-padding-top">Bill</legend>
+        <div class="u-flex input--bill u-flex-jc-between">
+          <img class="icon--dollar" src="./images/icon-dollar.svg" alt="Currency US Dollars">
+          <input type="text" name="bill" id="bill" placeholder="0">
+        </div>
+      </fieldset>
+
+      <fieldset class="c-tip">
+        <legend>Select Tip %</legend>
+        <div class="tip--cta">
+          <button class="btn-tip">5%</button>
+          <button class="btn-tip">10%</button>
+          <button class="btn-tip">15%</button>
+          <button class="btn-tip">25%</button>
+          <button class="btn-tip">50%</button>
+          <input class="tip-custom" type="text" name="custom" id="custom" placeholder="Custom">
+        </div>
+      </fieldset>
+
+      <fieldset class="c-input">
+        <div class="u-flex u-flex-jc-between">
+          <legend class="u-padding-top"> Number of People</legend>
+          <span class="error-message  u-hidden u-flex">Can't be zero</span>
+          <span class="error-message2  u-hidden u-flex">Not a number</span>
+        </div>
+
+        <div class="u-flex c-person u-flex-jc-between">
+          <img class="icon--dollar" src="./images/icon-person.svg" alt="Persons">
+          <input type="text" name="persons" id="persons" placeholder="0">
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="flex-container">
+
+      <div class="c-result-splitter">
+        <div class="tip-result-line1 u-flex u-flex-jc-between ">
+          <ul>
+            <li>Tip Amount</li>
+            <li><i>/ person</i></li>
+          </ul>
+          <ul>
+            <li class="result-line-1">$0</li>
+          </ul>
+        </div>
+
+        <div class="tip-result-line2 u-flex u-flex-jc-between ">
+          <ul>
+            <li>Total</li>
+            <li><i>/ person</i></li>
+          </ul>
+          <ul>
+            <li class="result-line-2">$0</li>
+          </ul>
+        </div>
+
+        <button class="btn-reset">RESET</button>
+
+      </div>
+    </div>
+
+
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Jordy</a>.
+    </div>
+  </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
